@@ -1,0 +1,132 @@
+/* DEFAULT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: rgb(234, 234, 234); /*barva pozadí*/
+  --font-color: rgb(85, 84, 84); /*barva písma*/
+  --section-color: #f9f9fc; /*pozadí sekce*/
+}
+
+body {
+  width: 60%;
+  margin: 20px auto;
+  background-color: var(--body-color);
+  color: var(--font-color);
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif; /*Ubuntu font pro celou stránku vyjma headeru */
+}
+
+/* ˇProfilová fotka */
+img {
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+header {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 8;
+}
+
+section {
+  background-color: var(--section-color);
+  padding: 30px 30px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
+}
+
+section:hover {
+  transform: scale(1.01);
+  transition: .5s;
+}
+
+.profile {
+  font-family: "Kanit", sans-serif; /* Kanit font pro header -jméno a pozici */
+  text-align: center;
+}
+
+/* SEKCE 'ABOUT ME' */
+.about-me {
+  text-align: justify;
+}
+
+.about-me p {
+  margin-top: 10px;
+}
+
+/* SEKCE 'KONTAKT' */
+.contact h2 {
+  margin-bottom: 10px;
+}
+.contact ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--font-color);
+  transition: 300ms;
+  text-decoration: underline transparent;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  transition: 0.9s;
+}
+
+/* SEKCE 'VZDĚLÁNÍ */
+.education h3 {
+  margin-top: 15px;
+}
+
+/* SEKCE 'PRACOVNÍ ZKUŠENOSTI */
+.jobs h3 {
+  margin-top: 20px;
+}
+.jobs ul li {
+  margin-left: 16px;
+  list-style-type: square;
+}
+
+/* SEKCE ''DOVEDNOSTI' A 'JAZYKOVÉ ZNALOSTI' */
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid var(--font-color);
+  padding: 5px;
+}
+
+th {
+  background-color: rgb(199, 192, 192);
+  color: var(--section-color);
+}
+
+tr:hover {
+  background-color: rgb(199, 192, 192);
+  color: var(--section-color);
+  transition: .5s;
+}
+
+/* SEKCE 'ZÁJMY' */
+
+.hobbies h2 {
+  margin-bottom: 10px;
+}
+
+.hobbies ul li {
+  margin-left: 17px;
+  list-style-type:circle;
+}
